@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Emma Kariuki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out for collaborations or questions.</p>
+    </header>
+
+    <main>
+        <section>
+            <form action="/submit" method="POST" novalidate>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254 7xx xxx">
+
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required minlength="50" placeholder="Minimum 50 characters..."></textarea>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Newsletter subscription</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
